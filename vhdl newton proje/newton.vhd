@@ -73,7 +73,7 @@ Begin  --architecture
  
 birinci_denklem_part1:Process               
 Begin 
-    --wait on x0;  
+    
 
      b10pay<=y1-y0  ;
      b10payda<=x1-x0  ;
@@ -102,7 +102,7 @@ Begin
 
   birinci_denklem_part2:Process 
   Begin  
-     --wait for 20 ns;  
+     
      wait on b10pay;
      
      b10<=b10pay/b10payda ;
@@ -120,7 +120,7 @@ Begin
  ---------------------------------------------------------------------------    
   ikinci_denklem_part1:Process 
   Begin  
-      --wait for 30 ns; 
+      
       wait on b10;
     
      b21pay<=b20-b10  ;
@@ -146,7 +146,7 @@ Begin
     
   ikinci_denklem_part2:Process 
   Begin  
-     --wait for 40 ns; 
+     
      wait on b21pay;
    
      b21<=b21pay/b21payda ;
@@ -161,7 +161,7 @@ Begin
  --------------------------------------------------------------------   
   ucuncu_denklem_part1:Process 
   Begin  
-      --wait for 50 ns;
+      
       wait on b21;
      
      b32pay<=b31-b21 ;
@@ -184,8 +184,8 @@ Begin
 ------------------------------------------     
    ucuncu_denklem_part2:Process 
   Begin  
-      --wait for 60 ns; 
-      wait on b32pay; 
+      
+     wait on b32pay; 
      
      b32<=b32pay/b32payda ;
      b42<=b42pay/b42payda ;
@@ -198,7 +198,7 @@ Begin
 ------------------------------------------------------------------------------------
   dorduncu_denklem_part1:Process 
   Begin  
-      --wait for 70 ns; 
+      
       wait on b32;
      
      b43pay<=b42-b32  ;
@@ -219,7 +219,7 @@ Begin
 ------------------------------------------------------------------------------------------------------------    
   dorduncu_denklem_part2:Process 
   Begin  
-      --wait for 80 ns; 
+      
       wait on b43pay;
      
      
@@ -234,7 +234,7 @@ Begin
 ----------------------------------------------------------------------------- 
   besinci_denklem_part1:Process 
   Begin  
-      --wait for 90 ns; 
+     
       wait on b43;
        
     
@@ -254,7 +254,7 @@ Begin
      
   besinci_denklem_part2:Process 
   Begin  
-      --wait for 100 ns; 
+      
       wait on b54pay;
        
      b54<=b54pay/b54payda ;
@@ -267,7 +267,7 @@ Begin
 ----------------------------------------------------------------------------- 
   altinci_denklem_part1:Process 
   Begin  
-    -- wait for 110 ns; 
+    
     wait on b54;
      
      b65pay<=b64-b54;
@@ -282,7 +282,7 @@ Begin
 ----------------------------    
   altinci_denklem_part2:Process 
   Begin  
-   --wait for 120 ns; 
+   
    wait on b65pay; 
      
      b65<=b65pay/b65payda;
@@ -295,7 +295,7 @@ Begin
 -----------------------------------------------------------------------------
   yedinci_denklem_part1:Process 
   Begin  
-     -- wait for 130 ns;
+    
      wait on b65;
      
      b76pay<=b75-b65 ;
@@ -306,7 +306,7 @@ Begin
      
   yedinci_denklem_part2:Process 
   Begin  
-      --wait for 140 ns;
+     
       wait on b76pay;
      
      b76<=b76pay/b76payda ; 
@@ -314,7 +314,7 @@ Begin
     end process;
     
     
-    --bize gereken katsayilar sunlar:
+    --bulunmasi gereken katsayilar sunlar:
     --y0
     --b10
     --b21
