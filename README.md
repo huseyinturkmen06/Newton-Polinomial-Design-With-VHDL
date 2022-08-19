@@ -1,5 +1,5 @@
-# VHDL-Ile-Newton-Polinomu-Tasarimi
-## Özet: 
-Bir donanım tanımlama dili olan ve klasik bir programlama dilinden ziyade, donanımsal bir devre gibi çalışan VHDL dili ile newton polinomunu gerçeklendi. <br/><br/>
+# Newton Polinomial Design With VHDL
+## Newton's polynomial was implemented with the VHDL language, which is a hardware description language and works like a hardware circuit rather than a classical programming language.
+<br/><br/>
 
 ![](https://github.com/huseyinturkmen06/VHDL-Ile-Newton-Polinomu-Tasarimi/blob/main/images/vhdl.gif)
